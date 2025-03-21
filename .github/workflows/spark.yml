@@ -53,3 +53,4 @@ jobs:
         git add results
         git commit -m "${{ env.CI_COMMIT_MESSAGE }}"
         git push
+

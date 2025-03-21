@@ -40,7 +40,7 @@ jobs:
         spark-version: '3.5.3'
         hadoop-version: '3'
 
-    - run: spark-submit --main local stream-spark.py
+    - run: spark-submit --main local hello-spark.py
     - run: ls -la  
 
     - name: GIT commit and push docs

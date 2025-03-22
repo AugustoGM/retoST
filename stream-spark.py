@@ -36,9 +36,9 @@ def get_spark_results(url_results):
         st.write(response.json())
 
 
-st.title("Spark & streamlit")
+st.title("Spark & streamlit | Reto Semana Tec")
 
-st.header("spark-submit Job")
+st.header("Augusto Gómez Maxil A01736346")
 
 github_user  =  st.text_input('Github user', value='AugustoGM')
 github_repo  =  st.text_input('Github repo', value='retoST')

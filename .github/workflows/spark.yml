@@ -40,9 +40,12 @@ jobs:
         spark-version: '3.5.3'
         hadoop-version: '3'
 
-    - run: spark-submit --master local hello-spark.py
-    - run: ls -la  
+    - run: wget -O dataset.csv https://raw.githubusercontent.com/AugustoGM/retoST/refs/heads/main/dinosaur.csv   
+    - run: ls -la
+    - run: spark-submit --master local dinosaur.py 
 
+
+    
     - name: GIT commit and push docs
       env: 
         CI_COMMIT_MESSAGE: save spark results
